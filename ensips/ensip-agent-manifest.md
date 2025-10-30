@@ -64,8 +64,8 @@ The root manifest is a signed JSON document with the following normative fields:
 ```json
 {
   "schemaVersion": "1.0.0",
-  "issuedAt": <unix-timestamp>,
-  "expiresAt": <unix-timestamp>,
+  "issuedAt": "<unix-timestamp>",
+  "expiresAt": "<unix-timestamp>",
   "collections": [
     {
       "name": "<string>",
@@ -74,15 +74,14 @@ The root manifest is a signed JSON document with the following normative fields:
       "membersUrl": "<string or null>",
       "membersHash": "<string or null>",
       "collection8041": {
-        "chainId": <number>,
+        "chainId": "<number>",
         "address": "<0x...>",
-        "snapshotBlock": <number or null>
+        "snapshotBlock": "<number or null>"
       },
       "notes": "<string or null>",
       "meta": {}, // optional free-form metadata
     }
-    // … more collections …
-  ],
+    ],
   "sources": [
     { "url": "<string>", "hash": "<string>" }
   ],
